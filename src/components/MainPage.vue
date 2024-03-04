@@ -22,6 +22,7 @@
 			</div>
 		</div>
 		<div class="snippets-wrapper__list">
+			<FormSubmit />
 			<ul class="snippets-main__list">
 				<li class="snippets-main__item-1"></li>
 				<li class="snippets-main__item-2"></li>
@@ -36,8 +37,10 @@
 <script>
 import { gsap } from 'gsap/gsap-core'
 import { onMounted, watch } from 'vue'
+import FormSubmit from './Form-submit.vue'
 
 export default {
+	components: { FormSubmit },
 	setup() {
 		watch(
 			onMounted(() => {
