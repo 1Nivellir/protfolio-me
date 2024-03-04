@@ -3,6 +3,7 @@
 		<div class="green__wrapper"></div>
 		<div class="blue__wrapper"></div>
 		<div class="main__content">
+			<FormSubmit />
 			<span class="main__span">Hi all. I am</span>
 			<h1 class="main__title">Вячеслав Воробьев</h1>
 			<span class="main__descr">> Front-end developer</span>
@@ -22,7 +23,6 @@
 			</div>
 		</div>
 		<div class="snippets-wrapper__list">
-			<FormSubmit />
 			<ul class="snippets-main__list">
 				<li class="snippets-main__item-1"></li>
 				<li class="snippets-main__item-2"></li>

@@ -1,9 +1,11 @@
 <template>
-	<form @submit.prevent="submitForm">
-		<input type="text" placeholder="Ваше имя" />
-		<input type="text" placeholder="Ваш email" />
-		<textarea placeholder="Ваше сообщение"></textarea>
-		<button type="submit">Отправить</button>
+	<form @submit.prevent="submitForm" class="form__submit">
+		<input type="text" placeholder="Ваше имя" class="form__input" />
+		<input type="text" placeholder="Ваш email" class="form__input" />
+		<textarea placeholder="Ваше сообщение" class="form__input"></textarea>
+		<button type="submit" class="bn39">
+			<span class="bn39span">Отправить</span>
+		</button>
 	</form>
 </template>
 
