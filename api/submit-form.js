@@ -1,3 +1,4 @@
+
 import nodemailer from 'nodemailer';
 
 const transporter = nodemailer.createTransport({
@@ -32,6 +33,8 @@ export default async (req, res) => {
 	try {
 		const info = await transporter.sendMail(mailOptions);
 		console.log('Email sent: ' + info.response);
+
+		// Добавьте заголовки CORS
 		res.setHeader('Access-Control-Allow-Origin', '*');
 		res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
 		res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
