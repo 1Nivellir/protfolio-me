@@ -24,7 +24,7 @@ export default async (req, res) => {
 		console.log('Email sent: ' + info.response);
 
 		// Добавьте заголовки CORS
-		res.setHeader('Access-Control-Allow-Origin', 'http://localhost:5173/');
+		res.setHeader('Access-Control-Allow-Origin', 'http://localhost:5173');
 		res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
 		res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
