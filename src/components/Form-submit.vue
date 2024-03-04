@@ -1,8 +1,22 @@
 <template>
 	<form @submit.prevent="submitForm" class="form__submit">
-		<input type="text" placeholder="Ваше имя" class="form__input" />
-		<input type="text" placeholder="Ваш email" class="form__input" />
-		<textarea placeholder="Ваше сообщение" class="form__input"></textarea>
+		<input
+			type="text"
+			placeholder="Ваше имя"
+			class="form__input"
+			v-model="yourName"
+		/>
+		<input
+			type="text"
+			placeholder="Ваш email"
+			class="form__input"
+			v-model="yourEmail"
+		/>
+		<textarea
+			placeholder="Ваше сообщение"
+			class="form__input"
+			v-model="yourMessage"
+		></textarea>
 		<button type="submit" class="bn39">
 			<span class="bn39span">Отправить</span>
 		</button>
