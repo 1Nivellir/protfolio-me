@@ -1,0 +1,120 @@
+@import 'mixin';
+
+.snippets-right__descr {
+	padding: 24px 30px;
+	border-radius: 15px;
+	border: 1px solid #1e2d3d;
+	background: #011221;
+}
+.wrapper__snippets {
+	padding-left: 30px;
+	padding-top: 15px;
+	padding-right: 30px;
+}
+.about-wrapper__descr {
+	padding-left: 15px;
+	padding-top: 15px;
+	margin-left: 370px;
+	padding-right: 15px;
+}
+
+.about__global-wrapper {
+	display: flex;
+}
+
+.snippets__title {
+	margin-bottom: 30px;
+	color: #607b96;
+	@include styleText;
+	font-size: 18px;
+	font-weight: 450;
+}
+.snippets-right__descr {
+	max-width: 610px;
+	color: #607b96;
+	@include styleText;
+	font-size: 14px;
+	font-weight: 450;
+	line-height: 170%;
+}
+
+.snippets-right__wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.user__photo {
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	background-image: url(../img/user-image.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.about-enter-active,
+.about-leave-active {
+	transition: opacity 0.5s ease;
+}
+
+.about-enter-from,
+.about-leave-to {
+	opacity: 0;
+}
+.user__wrapper {
+	display: flex;
+}
+.oldest__wrapper {
+	display: flex;
+	flex-direction: column;
+	padding-left: 10px;
+	margin-right: auto;
+}
+.user__title {
+	color: #5565e8;
+	@include styleText;
+	font-size: 14px;
+	font-weight: 700;
+}
+.user__descr {
+	color: #607b96;
+	@include styleText;
+	font-size: 12px;
+	font-weight: 450;
+}
+.user__details {
+	display: flex;
+}
+.details__text {
+	color: #607b96;
+	text-align: right;
+	@include styleText;
+	font-size: 14px;
+	font-weight: 450;
+	transition: color 0.3s ease-in-out;
+}
+.details__text:hover {
+	color: #fff;
+}
+
+.details__comment {
+	margin-right: 5px;
+	background-image: url(../img/comments-icon.svg);
+	width: 18px;
+	height: 18px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.details__star {
+	margin-right: 5px;
+	margin-left: 10px;
+	background-image: url(../img/Star.svg);
+	width: 18px;
+	height: 18px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}

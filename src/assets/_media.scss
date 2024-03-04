@@ -1,0 +1,103 @@
+@media (max-width: 1420px) {
+	.wrapper__snippets {
+		display: none;
+	}
+	.about-wrapper__descr {
+		width: 100%;
+		height: auto;
+	}
+	.right-pr__list {
+		flex-direction: column;
+	}
+	.right-pr__item {
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 1150px) {
+	.main__content {
+		padding-left: 50px;
+	}
+	.right-pr__list {
+		grid-template-columns: 1fr;
+	}
+
+	.snippets-wrapper__list {
+		display: none;
+	}
+	.right__wrapper {
+		padding-top: 20px;
+	}
+	.header-btn__wrapper {
+		display: none;
+	}
+	.main__content {
+		padding: 0;
+		padding-left: 30px;
+		padding-top: 100px;
+		padding-right: 30px;
+	}
+	.header__container {
+		justify-content: space-between;
+		padding: 0 22px;
+	}
+	.header__title {
+		margin-right: auto;
+	}
+	.header {
+		padding-left: 0;
+	}
+	.burger__btn {
+		display: flex;
+	}
+	.projects__aside {
+		display: none;
+	}
+	.projects__nav {
+		display: block;
+	}
+	.projects {
+		padding-left: 22px;
+		flex-direction: column;
+	}
+	.projects-aside__list {
+		padding-left: 0;
+	}
+	.right-pr__item {
+		width: 100%;
+		max-width: 100%;
+	}
+	.about__aside {
+		display: none;
+	}
+	.about__nav {
+		left: 0;
+		position: relative;
+		top: 0;
+		width: 100%;
+		height: auto;
+	}
+	.about__global-wrapper {
+		flex-direction: column;
+	}
+	.about-wrapper__descr {
+		display: block;
+		margin-left: 0;
+		width: 95%;
+		border-right: none;
+		height: auto;
+		margin-bottom: 20px;
+	}
+	.biografy__title {
+		background: #1e2d3d;
+		padding: 7px 10px;
+	}
+	.contacts__title {
+		background: #1e2d3d;
+		padding: 7px 10px;
+	}
+	.snippets-right__descr {
+		max-width: 768px;
+	}
+}

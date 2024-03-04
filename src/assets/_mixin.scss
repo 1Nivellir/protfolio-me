@@ -1,0 +1,11 @@
+@mixin styleText {
+	font-family: 'Fira Code';
+	line-height: normal;
+	font-style: normal;
+}
+
+@mixin list-reset {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
