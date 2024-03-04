@@ -17,15 +17,15 @@ const yourName = ref('')
 const yourEmail = ref('')
 const yourMessage = ref('')
 
-const submitForm = () => {
+const submitForm = async () => {
 	const url = 'https://protfolio-me.vercel.app/api/submit-form';
 	try {
-		const response = axios.post(url, {
-			yourName: yourName.value,
-			yourEmail: yourEmail.value,
-			yourMessage: yourMessage.value,
-		})
-		console.log(response);
+		const response = await axios.post(url, {
+			name: yourName.value, // Исправлено на 'name'
+			email: yourEmail.value, // Исправлено на 'email'
+			message: yourMessage.value, // Исправлено на 'message'
+		});
+		console.log(response.data); // Добавлено .data для доступа к данным ответа
 	} catch (error) {
 		console.error(error);
 	}
