@@ -35,11 +35,11 @@ const submitForm = async () => {
 	const url = 'https://protfolio-me.vercel.app/api/submit-form';
 	try {
 		const response = await axios.post(url, {
-			name: yourName.value, // Исправлено на 'name'
-			email: yourEmail.value, // Исправлено на 'email'
-			message: yourMessage.value, // Исправлено на 'message'
+			name: yourName.value,
+			email: yourEmail.value,
+			message: yourMessage.value,
 		});
-		console.log(response.data); // Добавлено .data для доступа к данным ответа
+		console.log(response.data);
 	} catch (error) {
 		console.error(error);
 	}

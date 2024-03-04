@@ -1,4 +1,4 @@
-import nodemailer from 'nodemailer'
+import nodemailer from 'nodemailer';
 
 const transporter = nodemailer.createTransport({
 	service: 'mail.ru',
@@ -9,7 +9,7 @@ const transporter = nodemailer.createTransport({
 		user: 'slava.vorobev.1995@mail.ru',
 		pass: process.env.password,
 	},
-})
+});
 
 export default async (req, res) => {
 	const mailOptions = {
@@ -17,14 +17,20 @@ export default async (req, res) => {
 		to: 'slavavorobey@vk.com',
 		subject: 'Новая заявка с формы',
 		text: `Имя: ${req.body.name}\nEmail: ${req.body.email}\nСообщение: ${req.body.message}`,
-	}
+	};
 
 	try {
-		const info = await transporter.sendMail(mailOptions)
-		console.log('Email sent: ' + info.response)
-		res.status(200).send('Форма успешно отправлена!')
+		const info = await transporter.sendMail(mailOptions);
+		console.log('Email sent: ' + info.response);
+
+		// Добавьте заголовки CORS
+		res.setHeader('Access-Control-Allow-Origin', 'http://localhost:5173/');
+		res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
+		res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+
+		res.status(200).send('Форма успешно отправлена!');
 	} catch (error) {
-		console.error(error)
-		res.status(500).send('Ошибка при отправке письма')
+		console.error(error);
+		res.status(500).send('Ошибка при отправке письма');
 	}
-}
+};
