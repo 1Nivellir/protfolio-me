@@ -1,4 +1,4 @@
-const nodemailer = require('nodemailer')
+import nodemailer from 'nodemailer'
 
 const transporter = nodemailer.createTransport({
 	service: 'mail.ru',
@@ -11,7 +11,7 @@ const transporter = nodemailer.createTransport({
 	},
 })
 
-module.exports = async (req, res) => {
+export default async (req, res) => {
 	const mailOptions = {
 		from: 'slava.vorobev.1995@mail.ru',
 		to: 'slavavorobey@vk.com',
