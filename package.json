@@ -17,6 +17,7 @@
 	},
 	"devDependencies": {
 		"@types/gsap": "^3.0.0",
+		"@types/node": "^20.11.24",
 		"@vitejs/plugin-vue": "^5.0.2",
 		"node-sass": "^9.0.0",
 		"sass": "^1.69.7",
